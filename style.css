@@ -29,8 +29,18 @@ body {
   color: #be95c4;
 }
 
+.nav-container button{
+  margin:0 20px;
+  color: #be95c4;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 #board{
   display: flex;
+  overflow-x: auto;
 }
 
 .js-list{
@@ -38,6 +48,7 @@ body {
   margin: 20px 10px;
   width: 250px;
   border-radius: 5px;
+  width: 250px;
   position: relative;
 }
 
@@ -45,7 +56,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin-top: 10px;
+  padding: 0;
 }
 
 .js-list-header .add-btn{
@@ -60,9 +73,22 @@ body {
 }
 
 .js-list-header h1{
-  padding: 2px;
   margin: 0 10px;
   color: #231942;
+  cursor: pointer;
+}
+
+.inputTitle{
+  border: none;
+  border-bottom: #231942 2px solid;
+  background-color: transparent;
+  margin: 0 0 0 10px;
+  font-size: 20px;
+  width: 150px;
+}
+
+input:focus {
+  outline: 0;
 }
 
 .list{
@@ -142,6 +168,8 @@ body {
   padding: 5px 10px;
   font-size: 15px;
   margin: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .card.input{
@@ -166,6 +194,7 @@ body {
   cursor: pointer;
   padding: 5px 10px;
   margin: 2px;
+
 }
 
 .inputTag{
